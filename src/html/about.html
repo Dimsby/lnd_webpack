@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <%= require('./../parts/head-fonts.inc') %>
+
+    <title>About</title>
+
+</head>
+<body>
+
+<%= _.template(require('./../parts/nav-main.inc'))({'type': 'light', 'page' : 'about'}) %>
+
+
+<%= _.template(require('./../parts/nav-secondary.inc'))({'title': 'About'}) %>
+
+
+<div class="container statements statements-common statements-larger">
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <h1>The history of AVCore began in 2019.</h1>
+            <p>As a company with
+                <b>15 years of experience</b>
+                in video software development, we have used our best practices to create AVCore CPaaS
+            </p>
+            <p>It helps developers and their clients quickly build web applications that use programmable video.</p>
+            <div class="text-center d-lg-none d-block p-3 my-3">
+                <img src="images/ill-about.jpg" class="img-fluid"/>
+            </div>
+            <p>We highly recommend you to try our APIs. You will be pleasantly surprised by the ease of implementation and stability of work.</p>
+            <p>Start for free now and we solve all your WebRTC video needs!</p>
+        </div>
+        <div class="d-none d-lg-block col-lg-5 offset-lg-1 text-center">
+            <img src="images/ill-about.jpg" class="img-responsive margin-vertical-m" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <%= require('./../parts/element-solution-btn.inc') %>
+        </div>
+    </div>
+</div>
+
+<%= require('./../parts/footer.inc') %>
+
+</body>
+</html>

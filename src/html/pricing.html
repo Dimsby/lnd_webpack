@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <%= require('./../parts/head-fonts.inc') %>
+
+    <title>Pricing</title>
+
+</head>
+<body>
+
+<%= _.template(require('./../parts/nav-main.inc'))({'type': 'light', 'page' : 'pricing'}) %>
+
+<%= _.template(require('./../parts/nav-secondary.inc'))({'title': 'Pricing'}) %>
+
+<div class="bg-half-grey padding-vertical-md">
+    <div class="container">
+        <div class="row panels justify-content-center">
+            <div class="col-12 col-lg-4">
+
+                <a href="#" class="panel-link">
+                    <div class="panel panel-border m-4 m-lg-0">
+                        <h2>Free Plan</h2>
+                        <h1><span>&nbsp;</span>Free</h1>
+                        <div>
+                            <h3>100<span>GB</span></h3>
+                            <p>free every month</p>
+                        </div>
+                        <div>
+                            <h3><span>$</span>0.15</h3>
+                            <p>for every additional GB</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="col-12 col-lg-4">
+
+                <a href="#" class="panel-link">
+                    <div class="panel panel-border m-4 m-lg-0">
+                        <h2>Enterprise Plan</h2>
+                        <h1><span>$</span>500 <small>/month</small></h1>
+                        <div>
+                            <h3>3.5<span>TB</span></h3>
+                            <p>for month</p>
+                        </div>
+                        <div>
+                            <h3>$0.15</h3>
+                            <p>for every additional GB</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="row pseudo-border-hr">
+            <div class="col solutions-big statements statements-common pt-5 pb-4 text-center">
+                <button type="button" class="btn mt-0 mb-3">Start building for free!</button>
+                <small>Have bigger volumes? Contact sales for discounts!</small>
+                <p><span class="semibold-sm">Need a custom WebRTC solution? </span><a href="#" class="icon-arrow">Contact
+                    our developers</a> for a free offer.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container statements statements-table pt-4">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1>So what will be the price per minute?</h1>
+            <h2>Here is a rough calculation</h2>
+        </div>
+        <div class="col-12 table-responsive">
+            <table class="table table-striped mt-5">
+                <thead>
+                <tr>
+                    <th class="w-25">Video Quality</th>
+                    <th>Resolution</th>
+                    <th>Video Bitrate</th>
+                    <th>Audio Bitrate</th>
+                    <th class="w-30">Cost, $ per minute</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>4K</td>
+                    <td>3840 x 2160</td>
+                    <td>30
+                        <light>mbit/s</light>
+                    </td>
+                    <td>192
+                        <light>kbps</light>
+                    </td>
+                    <td>
+                        <light>$</light>
+                        0.0332
+                        <light>pmin</light>
+                    </td>
+                </tr>
+                <tr>
+                    <td>HD 1080</td>
+                    <td>1920 x 1080</td>
+                    <td>8
+                        <light>mbit/s</light>
+                    </td>
+                    <td>192
+                        <light>kbps</light>
+                    </td>
+                    <td>
+                        <light>$</light>
+                        0.0090
+                        <light>pmin</light>
+                    </td>
+                </tr>
+                <tr>
+                    <td>HD 720</td>
+                    <td>1280 x 720</td>
+                    <td>4
+                        <light>mbit/s</light>
+                    </td>
+                    <td>160
+                        <light>kbps</light>
+                    </td>
+                    <td>
+                        <light>$</light>
+                        0.0046
+                        <light>pmin</light>
+                    </td>
+                </tr>
+                <tr>
+                    <td>HIGH</td>
+                    <td>960 x 540</td>
+                    <td>2
+                        <light>mbit/s</light>
+                    </td>
+                    <td>128
+                        <light>kbps</light>
+                    </td>
+                    <td>
+                        <light>$</light>
+                        0.0024
+                        <light>pmin</light>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<%= require('./../parts/footer.inc') %>
+
+</body>
+</html>

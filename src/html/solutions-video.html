@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <%= require('./../parts/head-fonts.inc') %>
+
+    <title>Solutions</title>
+
+</head>
+<body>
+<%= _.template(require('./../parts/nav-main.inc'))({'type': 'light', 'page' : 'solutions'}) %>
+
+<%= _.template(require('./../parts/nav-secondary-sub.inc'))({'title': 'Solutions'}) %>
+
+<div class="container statements statements-common statements-medium">
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <h1>Video Conferencing</h1>
+            <ul class="ul-common mt-5">
+                <li>Eploy flexible video conferencing solutions quickly. Connect employees wherever they are at the
+                    moment.
+                </li>
+                <li>With AVCore WebRTC APIs, you get all the functionality you need to organize a truly secure remote
+                    workflow. We've already taken care of everything you might run into.
+                </li>
+                <li>WebRTC conference calls with any number of participants. We have no restrictions on this. We even
+                    support connection to landline phones for more flexibility.
+                </li>
+            </ul>
+            <img src="images/ill-solutions-8.jpg" class="img-fluid padding-vertical-md d-none d-lg-block"/>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="text-right padding-vertical-xl">
+                <img src="images/ill-solutions-6.jpg" class="img-fluid"/>
+            </div>
+            <ul class="ul-common padding-vertical-lg mt-5 mt-lg-0">
+                <li>Built-in screen sharing and call recording features. You can record both the resulting video or the
+                    streams of each caller's separately, if necessary
+                </li>
+                <li>Truly secure collaboration using WebRTC capabilities. AVCore platform provides 256-bit AES
+                    end-to-end encryption by default for any data transmitted
+                </li>
+                <li>Reliable operation with a weak internet connection. Our servers around the world are designed to
+                    provide a sub-second latency for everyone on the call.
+                </li>
+                <li>Check our manuals (link to developers.avcore.io) to see how it's easy to build WebRTC conferencing
+                    app or register now for free to get 100GB and check our WebRTC video conferencing demo application.
+                </li>
+            </ul>
+        </div>
+        <div class="col-12">
+            <%= require('./../parts/element-solution-btn.inc') %>
+        </div>
+    </div>
+</div>
+
+<%= require('./../parts/footer.inc') %>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <%= require('./../parts/head-fonts.inc') %>
+
+    <title>Solutions</title>
+
+</head>
+<body>
+<%= _.template(require('./../parts/nav-main.inc'))({'type': 'light', 'page' : 'solutions'}) %>
+
+<%= _.template(require('./../parts/nav-secondary-sub.inc'))({'title': 'Solutions'}) %>
+
+<div class="container statements statements-common statements-medium">
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <h1>E-learning</h1>
+            <ul class="ul-common mt-5">
+                <li>Take full advantage of the capabilities of WebRTC to organize distance learning. We at AVCore have taken care of all the necessary functions for this.
+                </li>
+                <li>Just a few lines of code and you can deploy an e-learning platform specifically for your business needs.
+                </li>
+                <li>Host massive webinars.  The participants only need a browser and an internet connection. Our WebRTC platform does not impose restrictions on the number of students and their location. We allow conducting full-fledged classes with sub-second latency.
+                </li>
+            </ul>
+            <img src="images/ill-solutions-7.jpg" class="img-fluid padding-vertical-md d-none d-lg-block"/>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="text-right padding-vertical-xl">
+                <img src="images/ill-solutions-5.jpg" class="img-fluid"/>
+            </div>
+            <ul class="ul-common padding-vertical-lg mt-5 mt-lg-0">
+                <li>Engage students with live interaction. Use the play from file (VOD) function to stream prepared video or share your screen at the right time.
+                </li>
+                <li>Record lessons and create video courses. AVCore makes sure your lessons are streamed smoothly 24/7 worldwide.
+                </li>
+                <li>Easily build individual learning products. Use our video conferencing features for making one-on-one learning sessions.
+
+                </li>
+            </ul>
+        </div>
+        <div class="col-12">
+            <%= require('./../parts/element-solution-btn.inc') %>
+        </div>
+    </div>
+</div>
+
+<%= require('./../parts/footer.inc') %>
+
+</body>
+</html>

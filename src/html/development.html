@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <%= require('./../parts/head-fonts.inc') %>
+
+    <title>Development</title>
+
+</head>
+<body>
+
+<%= _.template(require('./../parts/nav-main.inc'))({'type': 'light', 'page' : 'development'}) %>
+
+<%= _.template(require('./../parts/nav-secondary.inc'))({'title': 'WebRTC Development'}) %>
+
+<div class="container statements statements-common statements-medium">
+    <div class="row">
+        <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+            <h1>Need a custom solution?</h1>
+            <div class="p-0 pl-lg-5 pt-lg-3">
+                <p>We, the creators of the AVCore platform, are a team of highly qualified WebRTC and media engineers.
+                </p>
+                <p>Our 15 years’ experience is exclusively associated with video: broadcasting, video conferencing,
+                    webinars, real-time video editing, etc.
+                </p>
+                <p>We have served almost a hundred clients and we always have an up-to-date experience. So do not
+                    hesitate to contact us for a quote or consulting.
+                </p>
+            </div>
+        </div>
+        <div class="d-none d-lg-block col-lg-2 pseudo-border">
+
+        </div>
+        <div class="col-12 col-lg-4">
+            <form class="avc-form">
+                <input type="text" name="name" placeholder="Name*"/>
+                <input type="text" name="phone" placeholder="Phone Number*"/>
+                <input type="text" name="email" placeholder="Email*"/>
+                <textarea name="description" placeholder="Project Description*">
+
+                </textarea>
+
+                <input class="btn w-100 mt-0" type="submit" value="Request a quote"/>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%= require('./../parts/footer.inc') %>
+
+</body>
+</html>

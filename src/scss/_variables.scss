@@ -1,0 +1,35 @@
+$avc-color-blue: #3880e4;
+$avc-color-dark-grey: #1a1a1a;
+$avc-color-dark-bg: #1b1e26;
+
+$avc-color-header: #303540;
+$avc-color-text: #474d59;
+$avc-color-light-accent: #737373;
+
+
+
+$grid-columns:        12;
+$grid-gutter-width:   30px;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1200px
+) !default;
+
+$font-size-base: 16;
+
+$navbar-padding-x: 0;
+
+$navbar-brand-padding-y: 0;
+
+$nav-link-padding-x: 0;
+
+$navbar-dark-color: #fff;
+$navbar-dark-hover-color: $avc-color-blue;
+$navbar-dark-active-color: $avc-color-blue;
+
+$navbar-light-color: $avc-color-dark-grey;
+$navbar-light-hover-color: $avc-color-blue;
+$navbar-light-active-color: $avc-color-blue;

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <title>Main</title>
+
+    <%= require('./../parts/head-fonts.inc') %>
+
+</head>
+<body>
+<div class="jumbotron-fluid w-100">
+    <div class="jumbotron-wrapper">
+
+        <%= _.template(require('./../parts/nav-main.inc'))({'type': 'dark', 'page' : 'main'}) %>
+
+        <div class="container-middle statements statements-dark">
+            <div class="row">
+                <div class="col-xl statement-lg">
+                    <p>Powerful WebRTC APIs <span class="text-small-lg">for building video applications fast.</span></p>
+                </div>
+                <div class="col-xl statement-md">
+                    <h1>Use our cloud infrastructure to</h1>
+                    <ol>
+                        <li>Connect to unlimited video and audio sources</li>
+                        <li>Stream HD video with sub-second latency to unlimited users</li>
+                        <li>Mix unlimited streams together in real-time</li>
+                        <li>Record any session to any destination</li>
+                        <li>Share screens on any device</li>
+                    </ol>
+
+                    <button type="button" class="btn">Start building for free!</button>
+
+                    <p class="semibold-sm">Need a custom WebRTC solution?</p>
+                    <p><a href="#" class="icon-arrow">Contact our developers</a> for a free offer.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="statements statements-common">
+        <div class="row">
+            <div class="col-12">
+                <h1>AVCore for <br/>Businesses</h1>
+            </div>
+            <div class="col card-list-common">
+                <div class="card-list-item">
+                    <h2>Video APIs for most of your use-cases</h2>
+                    <p>Build your video conferencing apps in minutes. Create live broadcasts for thousands of users.</p>
+                    <p>Use our unique mixer to craft multichannel CCTV and telemedicine solutions.</p>
+                </div>
+                <div class="card-list-item">
+                    <h2>Go to market fast advantages</h2>
+                    <p>Activate complex video features with a few lines of code from our well-documented SDK. We already
+                        solved all the problems.</p>
+                </div>
+                <div class="card-list-item">
+                    <h2>Get full control with our analytics</h2>
+                    <p>Look through the usage summaries or any session's low-level details with the easy report
+                        system</p>
+                </div>
+            </div>
+            <div class="col card-list-common">
+                <div class="card-list-item">
+                    <h2>Get benefit with all WebRTC advantages</h2>
+                    <p>Provide AES-256 end-to-end encryption for the maximum security.</p>
+                    <p>Get plugin-free playability of your content for most of the browsers.</p>
+                    <p>Impress your audience with 4K HD video at sub-second latency.</p>
+                </div>
+                <div class="card-list-item">
+                    <h2>Avoid growth challenges</h2>
+                    <p>Scale to an enterprise-level with our cloud architecture in a flash. We have 99.99% uptime,
+                        expert support, and compliance policy for any needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-grey">
+    <div class="container">
+        <div class="dummy" style="height: 200px"></div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="statements statements-common">
+        <div class="row">
+            <div class="col-12">
+                <h1>AVCore for <br/>developers</h1>
+            </div>
+            <div class="col-sm card-list card-list-common">
+                <div class="card-list-item">
+                    <p>Authorize and publish a WebRTC stream from a webcam/mic</p>
+                </div>
+                <div class="card-list-item">
+                    <p>Subscribe to a WebRTC stream, if necessary indicating an origin server to pull from (then the
+                        system provides origin->edge streaming for scalability)</p>
+                </div>
+                <div class="card-list-item">
+                    <p>Share a screen on a client device, as a WebRTC stream
+                    </p>
+                </div>
+                <div class="card-list-item">
+                    <p>Pull an RTMP stream (from a source such as OBS) and expose it as a WebRTC stream similar to
+                        others (like webcams)</p>
+                </div>
+                <div class="card-list-item">
+                    <p>Mix several streams together to produce a single composite stream - WebRTC, RTMP, or both</p>
+                </div>
+            </div>
+            <div class="col-sm card-list card-list-common">
+                <div class="card-list-item">
+                    <p>Publish any stream to an RTMP destination such as Youtube live or Facebook live
+                    </p>
+                </div>
+                <div class="card-list-item">
+                    <p>Send and/or receive a stream to a landline phone connection (using the Nexmo API)
+                    </p>
+                </div>
+                <div class="card-list-item">
+                    <p>Record a stream, being a single stream such as a webcam or mic, or a mixed stream of several
+                        participants
+                    </p>
+                </div>
+                <div class="card-list-item">
+                    <p>Play out a media file as a VOD WebRTC stream, played synchronously on all recipients’ devices.
+                    </p>
+                </div>
+                <div class="card-list-item">
+                    <p>Combine live and VOD streams in an MCU
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="statements statements-common bg-grey">
+    <div class="container">
+        <h1 class="mb-5">How AVCore<br/> Works</h1>
+        <div class="dummy" style="max-width: 1170px; height: 444px; background-color: #fff;"></div>
+    </div>
+</div>
+
+<div class="container-middle">
+    <div class="statements statements-common">
+        <h1 class="mb-5">Use cases</h1>
+        <div class="row">
+
+            <div class="col-12 col-md-5 card-list card-list-lg order-last order-md-1">
+
+                <div class="card-list-item">
+                    <div class="col-3 col-md-2">
+                        <img class="img-fluid" src="icons/online-education.svg"/>
+                    </div>
+                    <div class="col-9">
+                        <h2>Education</h2>
+                        <p>
+                            Make education accessible to students around the world. Enhance their immersive learning
+                            experience with superior video quality. Use our APIs to host and record webinars and
+                            training courses.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-list-item">
+                    <div class="col-3 col-md-2">
+                        <img class="img-fluid" src="icons/collaboration.svg"/>
+                    </div>
+                    <div class="col-9">
+                        <h2>Collaboration</h2>
+                        <p>
+                            Create personalized, highly secure collaboration tools according to your internal policies
+                            and requirements. With AVCore API's, you no longer need any expensive hardware communication
+                            solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-list-item">
+                    <div class="col-3 col-md-2">
+                        <img class="img-fluid" src="icons/streaming.svg"/>
+                    </div>
+                    <div class="col-9">
+                        <h2>Live Streaming</h2>
+                        <p class="border-0">
+                            Stream high-quality live video to any device for audiences of all sizes. Use our mixer to
+                            add any additional streams to your broadcast - from video recordings to live calls.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-7 order-first order-md-2 statement-md mb-5 mb-md-0">
+                <div class="ml-md-3">
+                    <p class="mb-5 text-sm-26">Our platform is universal for creating customized video applications for
+                        your
+                        business needs. Here are just a few examples of using our WebRTC APIs</p>
+                    <img class="img-fluid" src="images/screen.jpg"/>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col offset-sm-0 offset-md-1">
+                <button type="button" class="btn mt-0 mb-4">Start building for free!</button>
+
+                <p><span class="semibold-sm">Need a custom WebRTC solution? </span><a href="#" class="icon-arrow">Contact our developers</a> for a free offer.</p>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<%= require('./../parts/footer.inc') %>
+
+</body>
+</html>

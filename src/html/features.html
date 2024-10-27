@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
+    />
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <%= require('./../parts/head-fonts.inc') %>
+
+    <title>Features</title>
+
+</head>
+<body>
+
+<%= _.template(require('./../parts/nav-main.inc'))({'type': 'light', 'page' : 'features'}) %>
+
+<%= _.template(require('./../parts/nav-secondary.inc'))({'title': 'Features'}) %>
+
+
+<div class="container statements statements-common">
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <h1 class="mb-3">Here's what your web application can do with us</h1>
+            <h2 class="font-light mb-5">Connect with any audio/video sources</h2>
+
+            <div class="text-center d-lg-none d-block p-3 my-3">
+                <img src="images/ill-features-1.jpg" height="430"/>
+            </div>
+
+            <div class="card-list card-list-variation">
+
+                <div class="card-list-item">
+                    <div class="col-3 col-md-2">
+                        <img class="img-fluid" src="icons/rtmp.svg"/>
+                    </div>
+                    <div class="col-9">
+                        <h2>RTMP</h2>
+                        <p>
+                            Connect to any RTMP source such as IP-camera or any broadcasting software like OBS or
+                            whatever and expose it like WebRTC stream
+                        </p>
+                    </div>
+                </div>
+                <div class="card-list-item">
+                    <div class="col-3 col-md-2">
+                        <img class="img-fluid" src="icons/WebRTC.svg"/>
+                    </div>
+                    <div class="col-9">
+                        <h2>WebRTC</h2>
+                        <p>
+                            Obtain and publish a WebRTC stream from any webcam or microphone etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-list-item">
+                    <div class="col-3 col-md-2">
+                        <img class="img-fluid" src="icons/Landline.svg"/>
+                    </div>
+                    <div class="col-9">
+                        <h2>Landline phones</h2>
+                        <p>
+                            Add live calls to your broadcasting with our AVCore-to-Nexmo API connector
+                        </p>
+                    </div>
+                </div>
+                <div class="card-list-item">
+                    <div class="col-3 col-md-2">
+                        <img class="img-fluid" src="icons/media.svg"/>
+                    </div>
+                    <div class="col-9">
+                        <h2>Media Files</h2>
+                        <p>
+                            Use any media files and play them as a VOD WebRTC stream
+                        </p>
+                    </div>
+                </div>
+                <div class="card-list-item">
+                    <div class="col-3 col-md-2">
+                        <img class="img-fluid" src="icons/screen.svg"/>
+                    </div>
+                    <div class="col-9">
+                        <h2>Screen</h2>
+                        <p>
+                            Connect to the client’s screen via browser and share it as a WebRTC stream
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="d-none d-lg-block col-12 col-lg-6 py-5 text-right">
+            <img src="images/ill-features-1.jpg" class="img-responsive"/>
+        </div>
+    </div>
+</div>
+
+<div class="bg-grey">
+    <div class="container statements statements-common text-center pt-5">
+        <h1 class="my-5">Stream anywhere <br/>and in any way</h1>
+
+        <div class="row adds">
+
+            <div class="col-12 col-lg add-item">
+                <div class="add-img">
+                    <img src="icons/Streamtoany.svg"/>
+                </div>
+                <div class="col-10 mx-auto">
+                    <h2>Stream to any destination.<br/>For any number of users</h2>
+                    <p>Create huge broadcastings to many thousands of viewers. Publish the resulted streams synchronous
+                        to
+                        any browsers via WebRTC and/or to any RTMP destinations like YouTube or Facebook Live</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg add-item">
+            <div class="add-img">
+                <img src="icons/Mix.svg"/>
+            </div>
+            <div class="col-10 mx-auto">
+                <h2>Mix an unlimited number of streams into one in real‑timeuse‑cases</h2>
+                <p>Combine any number of initial streams of any type to create complex multicomponent real-time
+                    broadcastings. Use our powerful MCU for easy building services for online talk shows or CCTV
+                    systems or for any other purposes where you need mix streams and broadcast it synchronously to a
+                    large audience.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg add-item">
+        <div class="add-img">
+            <img src="icons/Record.svg"/>
+        </div>
+        <div class="col-10 mx-auto">
+            <h2>Record any streams anywhere
+            </h2>
+            <p>Record any of the streams individually before mixing or after combining them. Store your recordings in
+                our secure shared repository or on your own.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</div>
+
+<div class="container statements statements-common">
+    <div class="row">
+        <div class="col-12 col-lg-4 offset-0 offset-lg-8">
+            <h1 class="mb-3">Why AVCore CPAAS?</h1>
+        </div>
+
+        <div class="d-none d-lg-block col-12 col-lg-6 py-5 text-left">
+            <img src="images/ill-features-2.jpg" class="img-responsive"/>
+        </div>
+        <div class="col-12 col-lg-6">
+
+            <div class="text-center d-lg-none d-block p-3 my-3">
+                <img src="images/ill-features-2.jpg" height="430"/>
+            </div>
+
+            <div class="card-list card-list-variation">
+
+                <div class="card-list-item">
+                    <div class="col-3 col-md-2">
+                        <img class="img-fluid" src="icons/FullyWebRTC.svg"/>
+                    </div>
+                    <div class="col-9">
+                        <h2>Fully WebRTC’d
+                        </h2>
+                        <p>
+                            AES-256 end-to-end encryption for all the data by default. Sub-second latency for live
+                            streaming. VP8, h.264, and Opus industry-standard codecs supported. Multi-browser support
+                            for plugin-free user experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-list-item">
+                    <div class="col-3 col-md-2">
+                        <img class="img-fluid" src="icons/cloud.svg"/>
+                    </div>
+                    <div class="col-9">
+                        <h2>Cloud infrastructure
+                        </h2>
+                        <p>
+                            Forget the headaches with overheads for server administration, data protection, and project
+                            growth issues. Pay as you use. Get deep analytics for all your apps and simply manage all
+                            the resources in one place.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-list-item">
+                    <div class="col-3 col-md-2">
+                        <img class="img-fluid" src="icons/SimpleJavaScript.svg"/>
+                    </div>
+                    <div class="col-9">
+                        <h2>Simple JavaScript SDK
+                        </h2>
+                        <p>
+                            Check our JavaScript documentation (developers.avcore.io) to know how it simple to build any
+                            live video web application with AVCore. We use the socket.io library for troubleproof
+                            signaling.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-list-item">
+                    <div class="col-3 col-md-2">
+                        <img class="img-fluid" src="icons/features.svg"/>
+                    </div>
+                    <div class="col-9">
+                        <h2>Only the features you need
+                        </h2>
+                        <p>
+                            Our platform is designed to give you the most freedom. You can concentrate on your global
+                            goals while we provide audio/video processing and broadcasting at a deep level. You can
+                            easily use AVCore with any 3rd party APIs for additional video customization and analysis
+                            such as face recognition or AR.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="button" class="btn">Start building for free!</button>
+            <p><span class="semibold-sm">Need a custom WebRTC solution?</span><br/><a href="#" class="icon-arrow pl-0">Contact our developers</a> for a free offer.</p>
+
+        </div>
+    </div>
+</div>
+
+<%= require('./../parts/footer.inc') %>
+</body>
+</html>

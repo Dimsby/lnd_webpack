@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <%= require('./../parts/head-fonts.inc') %>
+
+    <title>Solutions</title>
+
+</head>
+<body>
+<%= _.template(require('./../parts/nav-main.inc'))({'type': 'light', 'page' : 'solutions'}) %>
+
+<%= _.template(require('./../parts/nav-secondary-sub.inc'))({'title': 'Solutions'}) %>
+
+
+<div class="container statements statements-common statements-medium">
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <h1>Live Streaming</h1>
+            <ul class="ul-common mt-5">
+                <li>Build complex and powerful live video streaming solutions for large-scale events using AVCore the
+                    WebRTC video streaming platform.
+                </li>
+                <li>Stream your videos to an unlimited number of viewers. We have already taken care of the minimum
+                    latency and will deliver your video on time.
+                </li>
+                <li>Redirect your streams to socials. Our platform is capable of streaming your video simultaneously to
+                    any number of RTMP destinations such as YouTube or Facebook.
+                </li>
+            </ul>
+            <img src="images/ill-solutions-2.jpg" class="img-fluid padding-vertical-md d-none d-lg-block"/>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="text-right padding-vertical-xl">
+                <img src="images/ill-solutions-1.jpg" class="img-fluid"/>
+            </div>
+            <ul class="ul-common padding-vertical-lg mt-5 mt-lg-0">
+                <li>Use our unique mixer to broadcast a complex multi-component video signal. Combine audio/video
+                    streams, shared screens, and videos from files (VOD) in real-time.
+                </li>
+                <li>Record the resulted stream. And republish it as a WebRTC or RTMP stream, if necessary.
+                </li>
+                <li>Learn our simple JavaScript SDK and start to create flexible solutions for Live auctions, TV Live
+                    Shows, CCTV, Command, and Control centers, etc.
+                </li>
+            </ul>
+        </div>
+        <div class="col-12">
+            <%= require('./../parts/element-solution-btn.inc') %>
+        </div>
+    </div>
+</div>
+
+<%= require('./../parts/footer.inc') %>
+
+</body>
+</html>
